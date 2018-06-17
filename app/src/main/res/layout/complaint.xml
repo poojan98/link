@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ctext3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ctext2"
+        android:layout_centerVertical="true"
+        android:text="Complain"
+        android:textColor="#00FF00"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <TextView
+        android:id="@+id/ctext2"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/cedit1"
+        android:layout_alignStart="@+id/ctext1"
+        android:text="MemberID"
+        android:textColor="#00FF00"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <TextView
+        android:id="@+id/ctext4"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_alignBaseline="@+id/cedit4"
+        android:layout_alignStart="@+id/ctext3"
+        android:text="Severity"
+        android:textColor="#00FF00"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <TextView
+        android:id="@+id/ctext1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ctext"
+        android:layout_marginTop="187dp"
+        android:text="HouseID"
+        android:textColor="#00FF00"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <TextView
+        android:id="@+id/ctext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="31dp"
+        android:text="Complain"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+
+    <EditText
+        android:id="@+id/cedit1"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="101dp" />
+
+    <EditText
+        android:id="@+id/cedit2"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ctext1"
+        android:layout_alignStart="@+id/cedit1"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="-3dp" />
+
+
+    <EditText
+        android:id="@+id/cedit4"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/cedit1"
+        android:layout_marginBottom="158dp" />
+
+    <Button
+        android:id="@+id/cbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ctext3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="Complain" />
+
+    <Button
+        android:id="@+id/cbuttonview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/cbutton"
+        android:layout_marginEnd="88dp"
+        android:text="view" />
+
+    <EditText
+        android:id="@+id/cedit3"
+        android:layout_width="201dp"
+        android:layout_height="59dp"
+        android:layout_alignEnd="@+id/cedit2"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="-7dp" />
+
+
+</RelativeLayout>

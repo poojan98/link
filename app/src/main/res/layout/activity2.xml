@@ -20,18 +20,19 @@
         android:text="Username" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_alignEnd="@+id/textView1"
-        android:layout_alignTop="@+id/EditView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/EditView6"
+        android:layout_marginStart="50dp"
         android:padding="20dp"
         android:text="Password" />
 
 
     <EditText
-        android:id="@+id/EditView1"
+        android:id="@+id/EditView6"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
 
@@ -41,11 +42,11 @@
         android:layout_marginTop="252dp" />
 
     <EditText
-        android:id="@+id/EditView2"
+        android:id="@+id/EditView7"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView1"
-        android:layout_alignStart="@+id/EditView1" />
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignStart="@+id/EditView6" />
 
 
     <Button

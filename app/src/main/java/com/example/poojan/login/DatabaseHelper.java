@@ -5,10 +5,11 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION=1;
-    private static final String DATABASE_NAME="trial.db";
+    private static final String DATABASE_NAME="database.db";
     private static final String SIGN_TABLE_NAME="login";
     private static final String SIGN_COLUMN_UNAME="uname";
     private static final String SIGN_COLUMN_NAME="name";
@@ -21,6 +22,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COMPLAIN_MEMBER_ID="mid";
     private static final String COMPLAIN_COMPLAIN="complain";
     private static final String COMPLAIN_SEVERITY="severity";
+
 
 
     private static final String SELL_TABLE_NAME="sell";
@@ -37,8 +39,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     SQLiteDatabase sqLiteDatabase;
 
     public DatabaseHelper(Context context) {
+
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+
+
     }
+
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {

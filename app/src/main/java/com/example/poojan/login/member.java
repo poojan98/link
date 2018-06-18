@@ -26,6 +26,7 @@ public class member extends AppCompatActivity {
         e3= (EditText) findViewById(R.id.medit3);
         e4= (EditText) findViewById(R.id.medit4);
         e2= (EditText) findViewById(R.id.medit2);
+        final String s1=e1.getText().toString();
         mbtn.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -61,7 +62,7 @@ public class member extends AppCompatActivity {
         mbtnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Integer deletedRows=db.deleteData(medit1.toText().toString());
+                Integer deletedRows=db.deleteData(s1);
                 if(deletedRows>0){
                     Toast.makeText(member.this,"Data not deleted",Toast.LENGTH_SHORT).show();
                 }
